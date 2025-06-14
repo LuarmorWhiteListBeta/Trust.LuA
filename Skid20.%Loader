@@ -64,7 +64,7 @@ trust:AddButton(
 )
 
 trust:AddButton(
-    "new camlock (new version of trust.lua)",
+    "new camlock (new version of shinz.lua)",
     function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/glokdraco/ghekko/refs/heads/main/loader"))()
     end
@@ -271,7 +271,7 @@ pekpek:AddTextbox(
 local gay = AimingTab:CreateSector("MAIN 3", "right")
 
 gay:AddButton(
-    "trust.lua 360",
+    "shinz.lua 360",
     function()
         local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/cat"))()
 local Players = game:GetService("Players")
@@ -483,7 +483,7 @@ Settings100:AddTextbox(
             Vector3.new(currentvelocity.X, currentvelocity.Y / 0.5, currentvelocity.Z)
     end
 
-if Trustlua.AutoAir.AirType == true then
+if shinzlua.AutoAir.AirType == true then
     if Plr.Character.Humanoid.Jump == true and Plr.Character.Humanoid.FloorMaterial == Enum.Material.Air then
         shinzlua.AutoAir.AimPart = "RightFoot"
     else
@@ -491,7 +491,7 @@ if Trustlua.AutoAir.AirType == true then
             if new == Enum.HumanoidStateType.Freefall then
                 settings.main.Part = "RightFoot"
             else
-                Trustlua.AutoAir.AimPart = "LowerTorso"
+                shinylua.AutoAir.AimPart = "LowerTorso"
             end
         end)
     end
